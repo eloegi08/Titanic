@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic: La Verità Nascosta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%231e3c72" width="1200" height="400"/></svg>');
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #ffd700;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .section {
+            padding: 40px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-left: 5px solid #ffd700;
+            padding-left: 15px;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .evidence {
+            background: #f8f9fa;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .ship-name {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .important {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #555;
+            padding: 20px;
+            border-left: 5px solid #2a5298;
+            margin: 25px 0;
+            background: #f0f4f8;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .detail-box {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #2196f3;
+        }
+
+        .detail-box h3 {
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .warning {
+            background: #ffebee;
+            border: 2px solid #f44336;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .details {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TITANIC: IL RELITTO NEL NORD ATLANTICO NON È QUELLO CHE PENSATE</h1>
+        <p class="subtitle">Ecco la prova dello scambio</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>🔍 La Scoperta Controversa</h2>
+            <p style="font-size: 1.15em; margin-bottom: 20px;">
+                Recenti analisi sonar ad alta risoluzione condotte dalla società <strong>Oceanic Research Group</strong> 
+                hanno riaperto il caso più controverso del XX secolo. Non è la sfortuna ad affondare il Titanic, 
+                ma una <span class="important">cinica operazione finanziaria</span> della White Star Line.
+            </p>
+            
+            <div class="highlight">
+                <p style="font-size: 1.1em;">
+                    <strong>La rivelazione:</strong> Il relitto che giace sul fondo dell'Atlantico potrebbe non essere 
+                    il leggendario Titanic, ma la sua nave gemella danneggiata.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚓ Lo Scambio delle Navi</h2>
+            
+            <div class="evidence">
+                <p style="font-size: 1.1em; margin-bottom: 15px;">
+                    Secondo documenti contabili emersi dagli archivi della banca Morgan, la compagnia era 
+                    <span class="important">sull'orlo del fallimento</span> dopo che l'<span class="ship-name">Olympic</span> 
+                    (la nave gemella) era stata gravemente danneggiata in un incidente.
+                </p>
+                
+                <div class="details">
+                    <div class="detail-box">
+                        <h3>💰 Il Piano</h3>
+                        <p>L'assicurazione non avrebbe mai coperto i danni dell'Olympic. La soluzione? 
+                        <strong>Scambiare le due navi identiche</strong>.</p>
+                    </div>
+                    
+                    <div class="detail-box">
+                        <h3>🎭 L'Esecuzione</h3>
+                        <p>Rinominare l'Olympic danneggiato in "Titanic" e lanciarlo in un viaggio inaugurale 
+                        destinato a un <span class="important">"incidente controllato"</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📋 Le Prove dello Scambio</h2>
+            
+            <div class="warning">
+                <h3 style="color: #d32f2f; margin-bottom: 15px;">⚠️ IL COLPO DI SCENA</h3>
+                <p style="font-size: 1.1em;">
+                    Qualcosa andò storto durante l'operazione
+                </p>
+            </div>
+
+            <div class="evidence">
+                <p style="font-size: 1.1em; margin-bottom: 20px;">
+                    <strong>L'iceberg colpì la nave in un punto non previsto</strong>, portando con sé 
+                    1.500 anime e il segreto di una frode colossale.
+                </p>
+
+                <div class="quote">
+                    "Se guardate bene i resti del relitto, il numero di serie inciso è il 
+                    <span class="important">400 (Olympic)</span> e non il <span class="important">401 (Titanic)</span>."
+                </div>
+
+                <div class="details">
+                    <div class="detail-box">
+                        <h3>🔢 Prova #1: I Numeri di Serie</h3>
+                        <p><strong>Olympic:</strong> Serie 400<br>
+                        <strong>Titanic:</strong> Serie 401<br>
+                        <strong>Relitto trovato:</strong> Serie <span style="color: #d32f2f; font-size: 1.2em;">400</span></p>
+                    </div>
+                    
+                    <div class="detail-box">
+                        <h3>💸 Prova #2: Il Premio Assicurativo</h3>
+                        <p>Il premio assicurativo avrebbe permesso alla White Star Line di 
+                        <strong>riscuotere milioni</strong> e salvare la compagnia dalla bancarotta.</p>
+                    </div>
+                </div>
+
+                <div class="detail-box" style="margin-top: 20px; background: #fff3e0; border-color: #ff9800;">
+                    <h3>⚡ Prova #3: L'Iceberg "Imprevisto"</h3>
+                    <p style="font-size: 1.05em;">
+                        Il piano prevedeva un incidente controllato per affondare la nave e riscuotere l'assicurazione. 
+                        Tuttavia, l'iceberg colpì in modo inaspettato, causando un <span class="important">disastro reale</span> 
+                        invece del controllato affondamento pianificato.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚢 Le Navi Gemelle</h2>
+            
+            <div class="evidence">
+                <p style="font-size: 1.1em; margin-bottom: 20px;">
+                    L'Olympic e il Titanic erano <strong>praticamente identiche</strong>, rendendo lo scambio 
+                    tecnicamente possibile. Solo piccoli dettagli strutturali e i numeri di serie le distinguevano.
+                </p>
+                
+                <div class="highlight">
+                    <h3 style="margin-bottom: 10px;">Caratteristiche delle Navi Gemelle:</h3>
+                    <ul style="margin-left: 20px; line-height: 2;">
+                        <li>Stesse dimensioni e capacità</li>
+                        <li>Stesso design interno ed esterno</li>
+                        <li>Costruite nello stesso cantiere navale</li>
+                        <li>Differenze minime visibili solo agli esperti</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💡 Conclusione</h2>
+            
+            <div class="quote">
+                "La storia del Titanic potrebbe essere la più grande frode assicurativa della storia, 
+                un segreto sepolto insieme alle 1.500 vittime nelle profondità dell'Atlantico."
+            </div>
+
+            <p style="font-size: 1.15em; margin-top: 20px; text-align: center; color: #1e3c72;">
+                <strong>La verità è là fuori, 3.800 metri sotto la superficie dell'oceano.</strong>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p style="font-size: 1.1em;">Ricerca e Investigazione Storica</p>
+        <p style="margin-top: 10px; opacity: 0.8;">Basato su documenti storici e analisi sonar dell'Oceanic Research Group</p>
+    </footer>
+</body>
+</html>
